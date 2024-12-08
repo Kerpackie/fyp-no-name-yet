@@ -35,6 +35,9 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapGet("/helloworld", () => "Hello World!")
+    .WithName("Hello World");
+
 app.MapDefaultEndpoints();
 
 app.Run();
